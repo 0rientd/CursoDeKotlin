@@ -19,8 +19,23 @@ fun main() {
 
     val stringExample: String = "Some example =P"
 
+    val boolean: Boolean = true     // 8-bits (it can be false too)
+    println(boolean)
+
     // Printing the types of the variables
     println(byte::class)
     println(short::class)
     println(long::class)
+    println(boolean::class)
+
+    // Conversion of types
+    val someIntPrice: Int = 50
+
+//  val convertedData: Double = someIntPrice.toDouble()
+    val convertedData = someIntPrice.toDouble()
+
+    println(someIntPrice::class)
+    println(convertedData::class)
+
+    println(convertedData)
 }
